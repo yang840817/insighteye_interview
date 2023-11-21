@@ -27,7 +27,7 @@ export default {
   },
 
   setup () {
-   const state = reactive({
+    const state = reactive({
       columns: [
         {
           name: 'name',
