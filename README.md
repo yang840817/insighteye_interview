@@ -1,6 +1,6 @@
 # Quasar App (quasar-project)
 
-A Quasar Interview Project
+A Quasar v2 Interview Project
 
 ## Install the dependencies
 ```bash
