@@ -10,7 +10,7 @@
   />
 </template>
 <script>
-import { onMounted } from 'vue';
+import { onMounted } from "vue";
 
 export default {
   props: {
@@ -26,17 +26,10 @@ export default {
   },
 
   setup(props, { emit }) {
+    onMounted(() => {});
 
-    onMounted(() => {
-
-    });
-
-    return {
-
-    };
+    return {};
   },
 };
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

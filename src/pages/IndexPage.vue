@@ -8,56 +8,54 @@
           <q-btn color="white" text-color="black" label="刪除" />
         </div>
       </div>
-      <QTable
-        :columns="state.columns"
-      />
+      <QTable :columns="state.columns" />
     </div>
   </q-page>
 </template>
 
 <script>
-import { reactive } from 'vue';
-import QTable from 'src/components/QTable.vue';
+import { reactive } from "vue";
+import QTable from "src/components/QTable.vue";
 
 export default {
-  name: 'IndexPage',
+  name: "IndexPage",
 
   components: {
-    QTable
+    QTable,
   },
 
-  setup () {
+  setup() {
     const state = reactive({
       columns: [
         {
-          name: 'name',
-          label: '姓名',
-          align: 'left',
-          field: 'name',
+          name: "name",
+          label: "姓名",
+          align: "left",
+          field: "name",
         },
         {
-          name: 'cellphone',
-          label: '手機',
-          align: 'left',
-          field: 'cellphone',
+          name: "cellphone",
+          label: "手機",
+          align: "left",
+          field: "cellphone",
         },
         {
-          name: 'email',
-          label: '信箱',
-          align: 'left',
-          field: 'email',
+          name: "email",
+          label: "信箱",
+          align: "left",
+          field: "email",
         },
         {
-          name: 'gender',
-          label: '性別',
-          align: 'left',
-          field: 'gender',
+          name: "gender",
+          label: "性別",
+          align: "left",
+          field: "gender",
         },
         {
-          name: 'birthday',
-          label: '生日',
-          align: 'left',
-          field: 'birthday',
+          name: "birthday",
+          label: "生日",
+          align: "left",
+          field: "birthday",
         },
       ],
       rows: [],
@@ -65,8 +63,8 @@ export default {
 
     return {
       state,
-    }
-  }
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>
